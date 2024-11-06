@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Young+Serif&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Young Serif", serif;
+}
+header{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+header a{
+    color: rgb(0,109,165);
+    text-decoration: none;
+}
+.aces a{
+    background-color: rgb(0,109,165);
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+}
+h1{
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    
+}
+header button{
+    background-color: rgb(0,109,165);
+    color: white;
+    border: none;
+}
+.home{
+    display: flex;
+    gap: 17px;
+ }
+ main{
+    background-color: rgb(239,243,245);
+ }
+ .cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+ }
+ main h1{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: gray;
+    padding: 45px;
+ }
+ main p{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: gray;
+ }
+ main h3{
+    display: flex;
+   /* text-align: center;
+    align-items: center;*/
+    justify-content: center;
+    color: gray;
+    margin-top: 20px;
+ }
+ main{
+    padding: 15px;
+ }
+ section img{
+    width: 100vw;
+ }
+ .sozder{
+    position: relative;
+    z-index: 1;
+    bottom: 430px;
+    left: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+ }
+    section{
+        margin-top: 45px;
+    }
+    .container{
+        display: grid;
+        grid-template-columns:repeat(4, 1fr) ;
+        grid-template-rows: 1fr ;
+        gap: 35px;
+    }
+    .item9{
+        grid-column: 9/10;
+    }
+    .container img{
+        width: 350px;
+        height:350px ;
+        border-radius: 25px;
+    }
+    .container .soxder{
+        display: flex;
+        justify-content: space-around;
+        position: relative;
+        bottom: 50px;
+        right: 25px;
+        z-index: 1;
+        color:rgb(73, 69, 69) ;
+    }
+    section h3{
+        background-color: white;
+        color: rgb(73, 69, 69);
+        padding: 25px;
+        text-align: center;
+    }
+    .box{
+        display: flex;
+        flex-direction: row;
+        gap: 35px;
+        margin-top: 35px;
+    }
+    .box img{
+        width: 830px;
+        height: 990px;
+    }
+    .sozder2 img{
+      width: 100vw;
+    }
+    footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        background-color: rgb(0,109,165);
+        margin-top: 150px; 
+        padding: 50px;
+      }
+      .also h1{
+          color: rgb(0,109,165);
+      }
+      .also p{
+          color: gray;
+      }
+      footer p, h5{
+          color: white;
+      }
+      .foot, .foot2 , .foot3, .foot4, .foot5{
+          padding: 5px;
+      }

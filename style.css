@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Young+Serif&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Young Serif", serif;
+}
+h2:hover{
+   color: white;
+}
+h3, h4, p{
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+}
+header{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+header a{
+    color: rgb(0,109,165);
+    text-decoration: none;
+}
+
+h1{
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    
+}
+header a:hover{
+    background-color: rgb(0,109,165);
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 0.7s;
+}
+
+header button:hover{
+    background-color: rgb(0,109,165);
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 0.7s;
+}
+/*.sign-in button:hover{
+    padding: 20px;
+
+}*/
+main button:hover{
+background-color: white ;
+color: rgb(0,109,165);
+}
+main{  
+        background-image: url('./image/glasses.png');
+        background-size: cover;
+        background-repeat: no-repeat; 
+        background-position: center;
+        height: 100%;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+       /* gap: 15px;*/
+}
+main h1{
+    font-size: 50px;
+    color: gray;
+}
+.home{
+   display: flex;
+   gap: 17px;
+}
+ header button{
+    background-color: rgb(0,109,165);
+    color: white;
+    border: none;
+}
+main button{
+    background-color: rgb(0,109,165);
+    color: white;
+    border: none;
+}
+main a{
+    color: rgb(0,109,179);
+    text-decoration: none;
+}
+.total{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    position: relative;
+    left: 55px;
+}
+main h1{
+    position: relative;
+    left: 55px;
+}
+.container{
+    display: grid;
+    grid-template-columns:repeat(4, 1fr) ;
+    grid-template-rows: 1fr ;
+    gap: 35px;
+}
+.item9{
+    grid-column: 9/10;
+}
+.container img{
+    width: 350px;
+    height:350px ;
+    border-radius: 25px;
+}
+.container .soxder{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    bottom: 50px;
+    right: 25px;
+    z-index: 1;
+    color:rgb(73, 69, 69) ;
+}
+section h3{
+    background-color: white;
+    color: rgb(73, 69, 69);
+    padding: 25px;
+    text-align: center;
+}
+.box{
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+    margin-top: 35px;
+}
+.box img{
+    width: 830px;
+    height: 990px;
+}
+.box button{
+    position: relative;
+    z-index: 2;
+    bottom: 65px;
+    left: 15px;
+}
+.words button{
+    background-color: rgb(0,109,165);
+    color: white;
+    border: none;
+}
+
+.words{
+display: flex;
+flex-direction: column;
+gap: 15px;
+position: relative;
+z-index: 4;
+bottom: 500px;
+left: 30px;
+}
+.words h1{
+    font-size: 50px;
+    color: gray;
+}
+.cont{
+    display: flex;
+    flex-direction: column;
+    width: 255px;
+    gap: 10px;
+
+}
+.sign-in{
+    display: flex;
+    justify-content: center;
+    gap: 550px;
+    position: relative;
+}
+footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: rgb(0,109,165);
+  margin-top: 150px; 
+  padding: 50px;
+}
+.also h1{
+    color: rgb(0,109,165);
+}
+.also p{
+    color: gray;
+}
+footer p, h5{
+    color: white;
+}
+.foot, .foot2 , .foot3, .foot4, .foot5{
+    padding: 5px;
+}
+.item121 button:hover{
+    background-color: rgb(124, 0, 0);
+    color: white;
+}
+.item122 button:hover{
+    background-color: rgb(124, 0, 0);
+    color: white;
+}
+.words button:hover{
+    background-color:white ;
+    color: rgb(0,109,165) ;
+}
+/*@media only screen and (max-width: 378px) {
+    header{
+        display: flex;
+        flex-direction: column;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+    section{
+        display: flex;
+        flex-direction: column;
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+    }
+    .main2{
+        display: flex;
+        flex-direction: column;
+    }
+    .sign-in{
+        display: flex;
+        flex-direction: column;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+    }
+}*/
+/* Base styles (as previously defined) */
+
+@media (max-width: 376px) {
+    body {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    header {
+        text-align: center;
+        padding: 10px;
+    }
+
+    header h2 {
+        font-size: 18px;
+    }
+
+    .home {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .home a {
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+
+    .sign-in {
+        width: 80px;
+        font-size: 12px;
+        margin-top: 10px;
+    }
+
+    main h1 {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .button {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .button button {
+        width: 100px;
+        font-size: 12px;
+    }
+
+    .href {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .container .item1,
+    .container .item2,
+    .container .item3,
+    .container .item4 {
+        width: 90%;
+        text-align: center;
+    }
+
+    .container img {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .box {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .main2 {
+        text-align: center;
+    }
+
+    .main2 .words h1 {
+        font-size: 20px;
+    }
+
+    .main2 .words p {
+        font-size: 14px;
+    }
+
+    .cont {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .cont input {
+        width: 90%;
+        font-size: 14px;
+    }
+
+    .cont button {
+        width: 90%;
+        font-size: 14px;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .foot, .foot2, .foot3, .foot4, .foot5 {
+        text-align: center;
+    }
+
+    .foot5 h5 {
+        font-size: 16px;
+    }
+
+    .foot p,
+    .foot2 p,
+    .foot3 p,
+    .foot4 p,
+    .foot5 p {
+        font-size: 12px;
+    }
+}

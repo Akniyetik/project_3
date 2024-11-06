@@ -1,0 +1,139 @@
+<html>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="glasses.css">
+    </head>
+    <body>
+        <header>
+            <a href="index.html"><h2 style="color: rgb(0,109,165);">WARBY PARKER</h2></a> 
+            <div class="home">
+              <a href="home.html">Home Try-On</a>
+              <div class="aces"> <a href="">Eyeglasses</a> </div>
+              <a href="eyeglassses.html">Sunglasses</a>
+              <a href="">Contacts</a>
+              <a href="index2.html">Accessories</a>
+              <a href="find-a-store.html">Find a store</a>
+            </div>
+            <button style="padding: 5px; border: 1px solid gray ; background-color: white; border-radius: 20px; width: 100px; color: rgb(0,109,165);">Sign in</button>
+        </header> 
+        <div class="slideshow-container">
+
+            <div class="mySlides">
+              <div class="numbertext">1 / 3</div>
+              <img src="./image/akni1.jpg" style="width:100%">
+              <div class="text">Glasses white</div>
+            </div>
+            
+            <div class="mySlides">
+              <div class="numbertext">2 / 3</div>
+              <img src="./image/akni5.jpg" style="width:100%">
+              <div class="text">Glasses blue</div>
+            </div>
+            
+            <div class="mySlides">
+              <div class="numbertext">3 / 3</div>
+              <img src="./image/akni3.jpg" style="width:100%">
+              <div class="text">Glasses pink</div>
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1)" style="color: rgb(0,109,165);">❮</a>
+            <a class="next" onclick="plusSlides(1)" style="color:rgb(0,109,165) ;">❯</a>
+            
+            </div>
+            <br>
+            
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span> 
+              <span class="dot" onclick="currentSlide(2)"></span> 
+              <span class="dot" onclick="currentSlide(3)"></span> 
+            </div>
+
+
+            <script>
+                let slideIndex = 1;
+                showSlides(slideIndex);
+                
+                function plusSlides(n) {
+                  showSlides(slideIndex += n);
+                }
+                
+                function currentSlide(n) {
+                  showSlides(slideIndex = n);
+                }
+                
+                function showSlides(n) {
+                  let i;
+                  let slides = document.getElementsByClassName("mySlides");
+                  let dots = document.getElementsByClassName("dot");
+                  if (n > slides.length) {slideIndex = 1}    
+                  if (n < 1) {slideIndex = slides.length}
+                  for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                  }
+                  for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                  }
+                  slides[slideIndex-1].style.display = "block";  
+                  dots[slideIndex-1].className += " active";
+                }
+                </script>
+                <footer>
+                    <div class="foot">
+                      <p><b>Products</b></p>
+                      <p>Eyeglasses</p>
+                      <p>Contacts</p>
+                      <p>New collections</p>
+                      <p>Accessories</p>
+                    </div>
+                    <div class="foot2">
+                      <p><b>Shop Online</b></p>
+                      <p>Try 5 for free</p>
+                      <p>Download our app</p>
+                
+                      <p><b>Get a prescription</b></p>
+                      <p>Book an eye exam</p>
+                      <p>Renew a prescription</p>
+                      <p>Measure your PD</p>
+                
+                      <p><b>Visit a store</b></p>
+                      <p>Find location</p>
+                    </div>  
+                
+                    <div class="foot3">
+                      <p><b>Ways yo save</b></p>
+                      <p>Insurance</p>
+                      <p>Flexible spending</p>
+                      <p>20% off contacts</p>
+                      <p>Add a pair and save</p>
+                
+                
+                
+                      <p><b>Education</b></p>
+                      <p>Eyeglasses lens guide</p>
+                      <p>Eyewear A to Z</p>
+                      <p>How our glasses are made</p>
+                    </div>
+                    <div class="foot4">
+                      <p><b>About us</b></p>
+                      <p>Our story</p>
+                      <p>Buy a Pair, Give a Pair</p>
+                      <p>Customer reviews</p>
+                      <p>Jobs</p>
+                      <p>Impact</p>
+                      <p>Impact-Foundation</p>
+                      <p>Investors</p>
+                      <p>Sitemap</p>
+                    </div>
+                
+                    <div class="foot5">
+                      <h5>Need a hand?</h5>
+                      <p>We're avaiable by phone (888.492.7297) <br> and chat today from 8 a.m.-11 p.m. ET.</p>
+                    </div>
+                  </footer>
+    </body>
+    </html>
+</html>
